@@ -1,8 +1,7 @@
-
-## [Play the game](/play)
-
-# Dev Log
+= yaml =
+title: Dev Log
+= yaml =
 
 {{#content.posts}}
-  * [{{ title }}]({{ url }})
+  * <a href='{{ url }}' class='postTitleLink'><p class='postTitle'>{{ title }}</p></a>
 {{/content.posts}}

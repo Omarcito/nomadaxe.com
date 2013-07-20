@@ -1,0 +1,81 @@
+
+/*---------------Mobile Portrait Width: 320px---------------*/
+@media screen and (min-width: 320px){
+  body{
+    header{
+      margin-top: -50px;
+      position:relative;
+      width:100%;
+      background-color: #086CA2;
+      box-shadow: 1px 1px 2px;
+      .motto{
+        padding-top: 15px;
+        font-family: Georgia, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        color:black;
+        font-size:2.3em;
+      }
+      .play-button{
+        height: 20px;
+        width: 50px;
+        background-color: red;
+        border: 1px solid magenta;
+        p{
+          font-size: 1.3em;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/*---------------Mobile Landscape Width: 480px---------------*/
+@media screen and (min-width: 480px){
+  body{
+    header{
+      .motto{
+        font-size:3.2em;
+      }
+    }
+  }
+}
+
+/*---------------Tablet Portrait Width: 768px---------------*/
+@media screen and (min-width: 768px){
+  body{
+    header{
+      #container{
+        width: 700px;
+        .motto{
+          font-size:5.3em;
+          float:left;
+        }
+        .play-button{
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+/*---------------Tablet Landscape Width: 1024px---------------*/
+@media screen and (min-width: 1024px){
+  body{
+    header{
+      #container{
+        width: 960px;
+        .motto{
+          font-size: 7.5em;
+        }
+      }
+    }
+  }
+}
+
+/*---------------Desktop Width: 1200px---------------*/
+@media screen and (min-width: 1200px){
+
+}
