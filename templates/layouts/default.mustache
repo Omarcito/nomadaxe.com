@@ -3,31 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} // nomadaxe.com</title>
-  <meta name="description" content="{{ description }}">
+  <meta name="description" content="{{ page.description }} {{ page.summary }}" />
+  <meta name="author" content="{{ page.author }}" />
+  <meta name="keywords" content="{{ page.tags }}" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="/stylesheets/css/default.css">
   <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
 </head>
 
 <body>
   <header>
-    <div id='container'>
-      <p class='motto' class='group'>NOMADAXE</p>
-      <a href="/play" title="Play!" >
-        <div class='play-button group'>
-          <p>Play the Game!</p>
-        </div>
-      </a>
-    </div>
+    <a href='/' id='motto' class='group'>NOMADAXE.COM</a>
+    <a href='/play' id='play-button' class='group'>Play the Game!</a>
+
   </header>
-  <section id='content'>
-    {{{ yield }}}
-  </section>
-  <footer>
-    
-  </footer>
+  {{{ yield }}}
 </body>
 </html>

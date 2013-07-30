@@ -16,6 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
   background: transparent;
   font-weight: normal;
+  text-decoration: none;
 }
 
 body {
@@ -62,8 +63,54 @@ acronym, abbr {
 /*-----^^^^ CSS Reset ^^^^-----*/
 /*---------------Mobile Portrait Width: 320px---------------*/
 @media screen and (min-width: 320px) {
+  header {
+    max-width: 310px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
+  header #motto {
+    font-size: 2em;
+    font-weight: bolder;
+    color: black;
+    float: left;
+  }
+  header #play-button {
+    height: 20px;
+    width: 30px;
+    background-color: red;
+    color: white;
+    float: right;
+  }
+}
+/*---------------Mobile Landscape Width: 480px---------------*/
+@media screen and (min-width: 480px) {
+  header {
+    max-width: 470px;
+  }
+}
+/*---------------Tablet Portrait Width: 768px---------------*/
+@media screen and (min-width: 768px) {
+  header {
+    max-width: 758px;
+  }
+}
+/*---------------Tablet Landscape Width: 1024px---------------*/
+@media screen and (min-width: 1024px) {
+  header {
+    max-width: 990px;
+  }
+}
+/*---------------Desktop Width: 1200px---------------*/
+/*---------------Mobile Portrait Width: 320px---------------*/
+@media screen and (min-width: 320px) {
   html {
     font-family: Georgia, sans-serif;
+  }
+  html .group:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 /*---------------Mobile Landscape Width: 480px---------------*/

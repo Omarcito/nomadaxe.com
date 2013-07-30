@@ -1,7 +1,6 @@
-= yaml =
-title: Dev Log
-= yaml =
+
+# Dev Log
 
 {{#content.posts}}
-  * <a href='{{ url }}' class='postTitleLink'><p class='postTitle'>{{ title }}</p></a>
+  * [{{ title }}]({{ url }})
 {{/content.posts}}
